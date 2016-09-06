@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC12D8D4-65EE-47DF-BC9A-92312646B0F3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication16</RootNamespace>
+    <AssemblyName>ConsoleApplication16</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chapter_10_Working_with_LINQ\Understanding Method-Based LINQ Queries.cs" />
+    <Compile Include="Chapter_10_Working_with_LINQ\Understanding Query Expressions.cs" />
+    <Compile Include="Chapter_10_Working_with_LINQ\Utilizing LINQ to XML.cs" />
+    <Compile Include="Chapter_3_Creating_Value_Types\Enums.cs" />
+    <Compile Include="Chapter_3_Creating_Value_Types\Understanding_Encapsulation.cs" />
+    <Compile Include="Chapter_3_Creating_Value_Types\Value_Types.cs" />
+    <Compile Include="Chapter_3_Creating_Value_Types\Working_with_Data_Structures.cs" />
+    <Compile Include="Chapter_4_Using_Types\Converting_Between_Types.cs" />
+    <Compile Include="Chapter_5_Creating_and_Implementing_Class_Hierarchies\Implementing_Common_Interfaces.cs" />
+    <Compile Include="Chapter_5_Creating_and_Implementing_Class_Hierarchies\Managing Object Life Cycle.cs" />
+    <Compile Include="Chapter_6_Working_with_Delegates_Events_and_Exceptions\Working with Events.cs" />
+    <Compile Include="Chapter_6_Working_with_Delegates_Events_and_Exceptions\Working_with_Delegates.cs" />
+    <Compile Include="Chapter_7_Multithreading_and_Asynchronous_Processing\Working with the Task Parallel Library.cs" />
+    <Compile Include="Chapter_8_ReflectIon_Custom_Attributes_The_Codedom_and_Lambda_Expressions\Generate Code Using the CodeDOM Namespace.cs" />
+    <Compile Include="Chapter_8_ReflectIon_Custom_Attributes_The_Codedom_and_Lambda_Expressions\Read_and_Create_Custom_Attributes.cs" />
+    <Compile Include="Chapter_9_Working_with_Data\Consuming Data.cs" />
+    <Compile Include="Chapter_9_Working_with_Data\Performing IO Opertations.cs" />
+    <Compile Include="Chapter_9_Working_with_Data\Understanding Serialization.cs" />
+    <Compile Include="Chapter_9_Working_with_Data\Woking with Data Collections.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Compile Include="Chapter_8_ReflectIon_Custom_Attributes_The_Codedom_and_Lambda_Expressions\Using the System Reflection Namespace.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
